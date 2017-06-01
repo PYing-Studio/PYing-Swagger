@@ -1,23 +1,15 @@
 package yay.apidoc.model;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+import java.io.Serializable;
 
-@ApiModel(description = "用户")
-public class User {
-	@ApiModelProperty(required = false)
-    private Integer id;
-	@ApiModelProperty(required = true)
+public class User implements Serializable {
+	private static final long serialVersionUID = 1L;
+	private Integer id;
     private String username;
-	@ApiModelProperty(required = true)
     private String password;
-	@ApiModelProperty(required = true)
     private String phone;
-	@ApiModelProperty(required = true)
     private String email;
-	@ApiModelProperty(required = true)
     private String nickname;
-	@ApiModelProperty(required = true)
     private String image;
     public User() {
         super();

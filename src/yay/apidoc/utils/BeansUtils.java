@@ -1,4 +1,4 @@
-package yay.apidoc.model;
+package yay.apidoc.utils;
 
 import java.beans.BeanInfo;
 import java.beans.Introspector;

@@ -1,34 +1,32 @@
 package yay.apidoc.model;
-
-import java.io.Serializable;
-
-public class Yueyin implements Serializable {
-	private static final long serialVersionUID = 1L;
-	private Integer id;
+public class Yueyin {
+    private Integer id;
     private String username;
-    private Integer movieId;
-    private String moveName;
-    private String cinemaId;
-    private String cinemaName;
-    private java.util.Date time;
+    private Integer orderId;
     private Integer num;
     private String friends;
-    private Integer statue;
+    private Integer status;
+    private Integer movieId;
+    private String movieName;
+    private String cinemaId;
+    private String cinemaName;
+    private java.util.Date showTime;
     public Yueyin() {
         super();
     }
-    public Yueyin(Integer id,String username,Integer movieId,String moveName,String cinemaId,String cinemaName,java.util.Date time,Integer num,String friends,Integer statue) {
+    public Yueyin(Integer id,String username,Integer orderId,Integer num,String friends,Integer status,Integer movieId,String movieName,String cinemaId,String cinemaName,java.util.Date showTime) {
         super();
         this.id = id;
         this.username = username;
-        this.movieId = movieId;
-        this.moveName = moveName;
-        this.cinemaId = cinemaId;
-        this.cinemaName = cinemaName;
-        this.time = time;
+        this.orderId = orderId;
         this.num = num;
         this.friends = friends;
-        this.statue = statue;
+        this.status = status;
+        this.movieId = movieId;
+        this.movieName = movieName;
+        this.cinemaId = cinemaId;
+        this.cinemaName = cinemaName;
+        this.showTime = showTime;
     }
     public Integer getId() {
         return this.id;
@@ -46,44 +44,12 @@ public class Yueyin implements Serializable {
         this.username = username;
     }
 
-    public Integer getMovieId() {
-        return this.movieId;
+    public Integer getOrderId() {
+        return this.orderId;
     }
 
-    public void setMovieId(Integer movieId) {
-        this.movieId = movieId;
-    }
-
-    public String getMoveName() {
-        return this.moveName;
-    }
-
-    public void setMoveName(String moveName) {
-        this.moveName = moveName;
-    }
-
-    public String getCinemaId() {
-        return this.cinemaId;
-    }
-
-    public void setCinemaId(String cinemaId) {
-        this.cinemaId = cinemaId;
-    }
-
-    public String getCinemaName() {
-        return this.cinemaName;
-    }
-
-    public void setCinemaName(String cinemaName) {
-        this.cinemaName = cinemaName;
-    }
-
-    public java.util.Date getTime() {
-        return this.time;
-    }
-
-    public void setTime(java.util.Date time) {
-        this.time = time;
+    public void setOrderId(Integer orderId) {
+        this.orderId = orderId;
     }
 
     public Integer getNum() {
@@ -102,12 +68,52 @@ public class Yueyin implements Serializable {
         this.friends = friends;
     }
 
-    public Integer getStatue() {
-        return this.statue;
+    public Integer getStatus() {
+        return this.status;
     }
 
-    public void setStatue(Integer statue) {
-        this.statue = statue;
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
+
+    public Integer getMovieId() {
+        return this.movieId;
+    }
+
+    public void setMovieId(Integer movieId) {
+        this.movieId = movieId;
+    }
+
+    public String getMovieName() {
+        return this.movieName;
+    }
+
+    public void setMovieName(String movieName) {
+        this.movieName = movieName;
+    }
+
+    public String getCinemaId() {
+        return this.cinemaId;
+    }
+
+    public void setCinemaId(String cinemaId) {
+        this.cinemaId = cinemaId;
+    }
+
+    public String getCinemaName() {
+        return this.cinemaName;
+    }
+
+    public void setCinemaName(String cinemaName) {
+        this.cinemaName = cinemaName;
+    }
+
+    public java.util.Date getShowTime() {
+        return this.showTime;
+    }
+
+    public void setShowTime(java.util.Date showTime) {
+        this.showTime = showTime;
     }
 
 }

@@ -17,7 +17,7 @@ public class ApplicationSwaggerConfig {
         Docket docket = new Docket(DocumentationType.SWAGGER_2);
         ApiInfo apiInfo = new ApiInfo(
                 "泡影 API",
-                "",
+                "所有url的前缀为http://119.29.135.223:8080/api/",
                 "V3.8.0",
                 "www.baidu.com",
                 "",

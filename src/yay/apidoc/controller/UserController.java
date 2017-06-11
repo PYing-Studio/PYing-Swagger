@@ -103,15 +103,4 @@ public class UserController {
 
 	}
 
-	@RequestMapping(value = "/collection", method = RequestMethod.GET)
-	@ApiOperation(notes = "/collection", httpMethod = "GET", value = "获取用户收藏")
-	@ResponseBody
-	public Map<String, String> myCollection(
-			@ApiParam(required = true, value = "用户名") String username) {
-		Map<String, String> map = new HashMap<String, String>();
-		map.put("control", "{\"expires\": 1800}");
-		map.put("data", "...");
-		map.put("status", "0");
-		return map;
-	}
 }
